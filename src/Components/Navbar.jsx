@@ -64,6 +64,16 @@ const Navbar = () => {
             ))}
           </ul>
           <button>Resume</button>
+          <div className="dropdown">
+          <button className="dropbtn">
+            {t('language')} <img src={i18n.language === 'en' ? englishFlag : i18n.language === 'tr' ? turkishFlag : azerbaijaniFlag} alt={i18n.language.toUpperCase()} />
+          </button>
+          <div className="dropdown-content">
+            <button onClick={() => changeLanguage('en')}><img src={englishFlag} className="flagImg" alt="EN" /> English</button>
+            <button onClick={() => changeLanguage('tr')}><img src={turkishFlag} className="flagImg" alt="TR" /> Türkçe</button>
+            <button onClick={() => changeLanguage('az')}><img src={azerbaijaniFlag} className="flagImg" alt="AZ" /> Azərbaycan</button>
+          </div>
+        </div>
         </div>
       </div>
     </div>
