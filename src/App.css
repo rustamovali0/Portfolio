@@ -90,7 +90,7 @@ a {
   font-size: 1.2rem;
 }
 
-.NavUl button {
+.NavUl #resumeBtn {
   margin-left: 5rem;
   width: 10rem;
   height: 3rem;
@@ -102,7 +102,7 @@ a {
   font-size: 1.9rem;
 }
 
-.NavUl button:hover {
+.NavUl #resumeBtn:hover {
   background-color: rgb(72, 191, 167);
   border: 1px solid rgb(72, 191, 167);
   border-radius: 5px;
@@ -144,7 +144,7 @@ a {
 .ResponsiveUl ul li::marker {
   color: rgb(72, 191, 167);
 }
-.ResponsiveUl button {
+.ResponsiveUl #resumeBtn {
   width: 10rem;
   height: 3rem;
   background-color: transparent;
@@ -155,7 +155,7 @@ a {
   font-size: 1.9rem;
 }
 
-.ResponsiveUl button:hover {
+.ResponsiveUl #resumeBtn:hover {
   background-color: rgb(72, 191, 167);
   border: 1px solid rgb(72, 191, 167);
   color: white;
@@ -358,7 +358,7 @@ a {
     gap: 5rem;
     font-size: 1.6rem;
   }
-  .NavUl button {
+  .NavUl #resumeBtn {
     margin-left: 3rem;
 
     font-size: 1.6rem;
@@ -863,4 +863,66 @@ a {
   cursor: pointer;
   width: 20rem;
 }
+}
+
+/* Navbar.css */
+/* ---------------------Language dropdown -------------------------------- */
+.dropbtn {
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 25rem;
+}
+
+.dropbtn img {
+  width: 20px;
+  margin-left: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+ width: 20rem;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content button {
+  color: black;
+  text-decoration: none;
+  display: block;
+  background-color: red;
+  border: none;
+  width: 12rem;
+  height: 2rem;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-content button:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.flagImg {
+  width: 25px;
+  height: 20px;
 }
