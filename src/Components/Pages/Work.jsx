@@ -36,7 +36,7 @@ const Work = () => {
           <h3>{t('work.navimax.description')}</h3>
         </div>
         <div className="WorkCard">
-          <img src="https://admin.parkomat.az/assets/photos/logos/full_logo.png" className="img3" alt="" />
+          <img src="https://panel.parkomat.az/assets/photos/logos/full_logo.png" className="img3" alt="" />
           <h1>ParkZone</h1>
           <h4>March 2024 - Present</h4>
           <h3>{t('work.navimax.description')}</h3>
