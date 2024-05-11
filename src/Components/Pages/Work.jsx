@@ -28,6 +28,19 @@ const Work = () => {
           <h4>March 2024 - Present</h4>
           <h3>{t('work.navimax.description')}</h3>
         </div>
+
+        <div className="WorkCard">
+          <img src="https://mobexadmin.wowwer.com/assets/photos/logos/full-logo.svg" className="img3" alt="" />
+          <h1>Mobex</h1>
+          <h4>March 2024 - Present</h4>
+          <h3>{t('work.navimax.description')}</h3>
+        </div>
+        <div className="WorkCard">
+          <img src="https://admin.parkomat.az/assets/photos/logos/full_logo.png" className="img3" alt="" />
+          <h1>ParkZone</h1>
+          <h4>March 2024 - Present</h4>
+          <h3>{t('work.navimax.description')}</h3>
+        </div>
       </div>
     </div>
   );

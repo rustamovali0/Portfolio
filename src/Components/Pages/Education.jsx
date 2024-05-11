@@ -20,7 +20,7 @@ const Education = () => {
         src="https://au.edu.az/userfiles/uploads/f121d135f39f03e48da5fe5e8ced5b0a.jpg" 
         alt="Azerbaijan University Logo" 
         onClick={openWebsite}
-        style={{ cursor: 'pointer' }} // Change cursor to pointer when hovering over the image
+        style={{ cursor: 'pointer' }} 
       />
     </div>
   );

@@ -10,6 +10,10 @@
     "about": {
       "title": "Merhaba, benim adım",
       "name": "Rustamov Ali.",
+      "hoverTitle":"Ben",
+      "hoverTitle1": "React Developeriyim",
+      "hoverTitle2": "PHP Developeriyim",
+      "hoverTitle3": "Proje Menejeriyim",
       "subtitle": "Web için şeyler inşa ediyorum.",
       "aboutMe": "Benim Hakkımda",
       "description1": "Ben bir ön uç geliştirici olarak çalışıyorum ve kullanıcı dostu arayüzler oluşturmak için React.js kullanmayı özel olarak yapıyorum.",

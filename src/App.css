@@ -31,8 +31,8 @@ a {
   height: 5rem;
 }
 .NavUl ul li.active {
-  background-color: #48bfa7; 
-  border-radius: 1rem;
+  text-shadow: 3px 3px 4px #ffffff;
+  border-radius: 10px;
 }
 
 .NavUl ul {
@@ -40,7 +40,6 @@ a {
   color: white;
   gap: 6.8rem;
   font-size: 1.9rem;
-  /* line-height: 2rem; */
   list-style-type: decimal-leading-zero;
 }
 
@@ -111,6 +110,8 @@ a {
 
 .ResponsiveUl {
   display: none;
+  z-index:4;
+  position: relative;
 }
 .responsiveUlCon {
   display: flex;
@@ -162,6 +163,61 @@ a {
 }
 
 /* -------------------------ABOUT------------------------------------------ */
+.wrapper{
+  display: flex;
+
+}
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 50px;
+  font-weight: 400;
+  margin-top: 0.7rem;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts .dynamic-li{
+  list-style: none;
+  color: #FC6D6D;
+  font-size: 50px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+
+
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background: #0a192f;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
 
 .About {
   padding: 5rem 10rem 0;
@@ -203,11 +259,22 @@ a {
 .About article {
   width: 85rem;
 }
-.About .logoReact img {
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logoReact img {
   width: 35rem;
   height: 35rem;
   margin: 5rem 0rem 0rem 7rem;
+  animation: rotate 10s linear infinite;
 }
+
 /* -------------------------ABOUT------------------------------------------ */
 /* -------------------------Experience------------------------------------------ */
 .Experience {
@@ -567,7 +634,9 @@ a {
     align-items: center;
     flex-wrap: wrap;
   }
-
+  .dropdownRes{
+   margin-top: 2rem;
+   }
   .Education {
     color: #ffffff;
     padding: 5rem;
@@ -691,6 +760,58 @@ a {
   cursor: pointer;
   width: 30rem;
 }
+/* TextWrapper */
+
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 2.2rem;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 65px;
+  line-height: 10px;
+  overflow: hidden;
+
+}
+.dynamic-txts .dynamic-li{
+  list-style: none;
+  color: #FC6D6D;
+  font-size: 30px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+
+
+}
+
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0; 
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  height: 55px;
+  width: 100%;
+  background: #0a192f;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 40%);
+  }
+  100%{
+    left: 0;
+  }
+}
+/* TextWrapper */
 }
 @media only screen and (max-width: 524px) {
   .About h1 {
@@ -863,27 +984,98 @@ a {
   cursor: pointer;
   width: 20rem;
 }
+/* TextWrapper */
+
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 2.9rem;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 65px;
+  line-height: 10px;
+  overflow: hidden;
+
+}
+.dynamic-txts .dynamic-li{
+  list-style: none;
+  color: #FC6D6D;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+
+
+}
+
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0; 
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  height: 25px;
+  width: 100%;
+  background: #0a192f;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 40%);
+  }
+  100%{
+    left: 0;
+  }
+}
+/* TextWrapper */
 }
 
 /* Navbar.css */
 /* ---------------------Language dropdown -------------------------------- */
 .dropbtn {
-  background-color: red;
-  color: white;
+  background-color: #0a192f;
+  color: #ffffff;
   font-size: 16px;
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
-  width: 25rem;
+  width: 3rem;
+  margin-left: 3rem;
+  
 }
-
+.dropbtn {
+  background-color: #0a192f;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 3rem;
+  margin-left: 3rem;
+  
+}
 .dropbtn img {
-  width: 20px;
-  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  
 }
 
 .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdownRes {
   position: relative;
   display: inline-block;
 }
@@ -891,8 +1083,8 @@ a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
- width: 20rem;
+ width: 9.5rem;
+ padding: 2px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -901,10 +1093,11 @@ a {
   color: black;
   text-decoration: none;
   display: block;
-  background-color: red;
+  background-color: rgb(255, 255, 255);
   border: none;
-  width: 12rem;
-  height: 2rem;
+  width: 10rem;
+  padding: 5px;
+  height: 3rem;
   text-align: left;
   cursor: pointer;
   display: flex;
@@ -918,11 +1111,14 @@ a {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+.dropdownRes:hover .dropdown-content {
+  display: block;
 }
+
+
 .flagImg {
   width: 25px;
   height: 20px;
+  object-fit: cover;
+  padding-right: 2px;
 }

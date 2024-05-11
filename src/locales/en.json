@@ -11,6 +11,10 @@
     "about": {
       "title": "Hi, my name is",
       "name": "Rustamov Ali.",
+      "hoverTitle":"I'm a",
+      "hoverTitle1": "Front End Developer",
+      "hoverTitle2": "PHP Developer",
+      "hoverTitle3": "Project Manager",
       "subtitle": "I build things for the web.",
       "aboutMe": "About Me",
       "description1": "I work as a front-end developer and specialize in using React.js to create user-friendly interfaces.",

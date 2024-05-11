@@ -36,9 +36,11 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        
+        <button id="resumeBtn">Resume</button>
         <div className="dropdown">
           <button className="dropbtn">
-            {t('language')} <img src={i18n.language === 'en' ? englishFlag : i18n.language === 'tr' ? turkishFlag : azerbaijaniFlag} alt={i18n.language.toUpperCase()} />
+            <img src={i18n.language === 'en' ? englishFlag : i18n.language === 'tr' ? turkishFlag : azerbaijaniFlag} alt={i18n.language.toUpperCase()} />
           </button>
           <div className="dropdown-content">
             <button onClick={() => changeLanguage('en')}><img src={englishFlag} className="flagImg" alt="EN" /> English</button>
@@ -46,7 +48,6 @@ const Navbar = () => {
             <button onClick={() => changeLanguage('az')}><img src={azerbaijaniFlag} className="flagImg" alt="AZ" /> Azərbaycan</button>
           </div>
         </div>
-        <button id="resumeBtn">Resume</button>
       </div>
       <div className={`burgerMenu ${!isOpen ? 'active' : ''}`} onClick={toggleMenu}>
         <GiHamburgerMenu />
@@ -63,10 +64,10 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <button>Resume</button>
-          <div className="dropdown">
+          <button id="resumeBtn">Resume</button>
+          <div className="dropdownRes">
           <button className="dropbtn">
-            {t('language')} <img src={i18n.language === 'en' ? englishFlag : i18n.language === 'tr' ? turkishFlag : azerbaijaniFlag} alt={i18n.language.toUpperCase()} />
+          <img src={i18n.language === 'en' ? englishFlag : i18n.language === 'tr' ? turkishFlag : azerbaijaniFlag} alt={i18n.language.toUpperCase()} />
           </button>
           <div className="dropdown-content">
             <button onClick={() => changeLanguage('en')}><img src={englishFlag} className="flagImg" alt="EN" /> English</button>
